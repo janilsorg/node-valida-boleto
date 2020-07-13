@@ -1,5 +1,8 @@
 # API REST que valida linha digitável e retorna número do boleto
 
+## Live preview (pode ser testado via Internet) - HEROKU
+<p>https://janilsorg-valida-boleto.herokuapp.com/validaboleto</p>
+
 ## Instruções para execução
 
 ### Instale as dependências
