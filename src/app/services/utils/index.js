@@ -1,8 +1,8 @@
-exports.tituloDV = async field => {
+exports.tituloDV = async campo => {
   let multiplicador = 2;
   let soma = 0;
-  for(let i=0; i < field.length; i++){
-    let local_soma = Number(field[i]) * multiplicador;
+  for(let i=0; i < campo.length; i++){
+    let local_soma = Number(campo[i]) * multiplicador;
     multiplicador = multiplicador > 1 ? (multiplicador -= 1) : 2;
     soma += local_soma > 9 ? Math.floor(local_soma / 10) + (local_soma % 10) : local_soma;
   }
@@ -10,12 +10,12 @@ exports.tituloDV = async field => {
   return dezenaSuperior - soma;
 };
 
-exports.concessionariaDVMod10 = async field => {
+exports.concessionariaDVMod10 = async codigo => {
   
   let multiplicador = 2;
   let soma = 0;
-  for(let i=0; i < field.length; i++){
-    let local_soma = Number(field[i]) * multiplicador;
+  for(let i=0; i < codigo.length; i++){
+    let local_soma = Number(codigo[i]) * multiplicador;
     multiplicador = multiplicador > 1 ? (multiplicador -= 1) : 2;
     soma += local_soma > 9 ? Math.floor(local_soma / 10) + (local_soma % 10) : local_soma;
   }
